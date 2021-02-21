@@ -19,7 +19,7 @@ class Query(graphene.ObjectType):
 
     def resolve_all_systems(root, info):
         return System.objects.all()
-    
+
     def resolve_all_accessiblity_requests(root, info):
         return AccessibilityRequest.objects.all()
 
