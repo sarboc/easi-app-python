@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'easi_api.systems'
+    'easi_api.systems',
+    'graphene_django'
 ]
 
 MIDDLEWARE = [
@@ -70,6 +71,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'easi_api.wsgi.application'
 
+GRAPHENE = {
+    "SCHEMA": "easi_api.schema.schema"
+}
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
