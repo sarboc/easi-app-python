@@ -1,0 +1,34 @@
+[
+    {
+        "model": "systems.system",
+        "pk": 1,
+        "fields": {
+            "name": "Easy Access to System Information",
+            "lcid": "123456a"
+        }
+    },
+    {
+        "model": "systems.system",
+        "pk": 2,
+        "fields": {
+            "name": "CMS System to do Amazing Things",
+            "lcid": "345677b"
+        }
+    },
+    {
+        "model": "systems.system",
+        "pk": 3,
+        "fields": {
+            "name": "Test System 3",
+            "lcid": "968823c"
+        }
+    },
+    {
+        "model": "systems.system",
+        "pk": 1,
+        "fields": {
+            "name": "Test System to Test Testy Things",
+            "lcid": "968574d"
+        }
+    }
+]
