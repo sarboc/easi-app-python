@@ -9,7 +9,7 @@ class SystemType(DjangoObjectType):
         fields = ("id", "name", "lcid")
 
 class Query(graphene.ObjectType):
-    all_systems = graphene.list(SystemType)
+    all_systems = graphene.List(SystemType)
 
     def resolve_all_systems(root, info):
         return System.objects.all()
