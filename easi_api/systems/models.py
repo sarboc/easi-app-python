@@ -31,7 +31,7 @@ class AccessibilityTestDate(models.Model):
     date = models.DateField()
     score = models.IntegerField(null=True)
     accessibility_request = models.ForeignKey(
-        AccessibilityRequest, related_name="accessibility_request", on_delete=models.CASCADE
+        AccessibilityRequest, related_name="dates", on_delete=models.CASCADE
     )
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
