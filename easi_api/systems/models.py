@@ -15,3 +15,23 @@ class AccessibilityRequest(models.Model):
 
     def __str__(self):
         return self.name
+
+class AccessibilityTestDate(models.Model):
+    INITIAL = 'INITIAL'
+    REMEDIATION = 'REMEDIATION'
+    TYPE_CHOICES = [
+        (INITIAL, INITIAL), 
+        (REMEDIATION, REMEDIATION)
+    ]
+    test_type = models.CharField(
+        max_length=100,
+        choices=TYPE_CHOICES,
+        default=INITIAL,
+    )
+    date = models.DateField
+    score = models.IntegerField
+    accessibility_request = models.ForeignKey(
+        AccessibilityRequest, related_name="accessibility_request", on_delete=models.CASCADE
+    )
+    updated_at = models.DateField(auto_now=True)
+    created_at = models.DateField(auto_now_add=True)
