@@ -28,10 +28,10 @@ class AccessibilityTestDate(models.Model):
         choices=TYPE_CHOICES,
         default=INITIAL,
     )
-    date = models.DateField
-    score = models.IntegerField
+    date = models.DateField()
+    score = models.IntegerField(null=True)
     accessibility_request = models.ForeignKey(
         AccessibilityRequest, related_name="accessibility_request", on_delete=models.CASCADE
     )
-    updated_at = models.DateField(auto_now=True)
-    created_at = models.DateField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
