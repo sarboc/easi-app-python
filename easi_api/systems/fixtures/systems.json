@@ -25,7 +25,7 @@
     },
     {
         "model": "systems.system",
-        "pk": 1,
+        "pk": 4,
         "fields": {
             "name": "Test System to Test Testy Things",
             "lcid": "968574d"
