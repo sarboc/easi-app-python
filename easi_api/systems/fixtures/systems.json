@@ -30,5 +30,21 @@
             "name": "Test System to Test Testy Things",
             "lcid": "968574d"
         }
+    },
+    {
+        "model": "systems.AccessibilityRequest",
+        "pk": 1,
+        "fields": {
+            "name": "Easy Access to System Information 1.0",
+            "system": 1
+        }
+    },
+    {
+        "model": "systems.AccessibilityRequest",
+        "pk": 2,
+        "fields": {
+            "name": "Easy Access to System Information 1.1",
+            "system": 1
+        }
     }
 ]
