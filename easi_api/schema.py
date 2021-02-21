@@ -11,7 +11,7 @@ class SystemType(DjangoObjectType):
 class AccessibilityRequestType(DjangoObjectType):
     class Meta:
         model = AccessibilityRequest
-        fields = ("id", "name")
+        fields = ("id", "name", "system")
 
 class AccessibilityTestDateType(DjangoObjectType):
     class Meta:
@@ -27,7 +27,7 @@ class Query(graphene.ObjectType):
         return System.objects.all()
     
     def resolve_all_accessibility_requests(root, info):
-        return AccessibilityRequest.objects.all()
+        return AccessibilityRequest.objects.select_related("system").all()
 
     def resolve_all_test_dates(root, info):
         return AccessibilityTestDate.objects.all()
