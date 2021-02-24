@@ -1,6 +1,6 @@
 [
     {
-        "model": "systems.system",
+        "model": "easi_api.system",
         "pk": 1,
         "fields": {
             "name": "Easy Access to System Information",
@@ -8,7 +8,7 @@
         }
     },
     {
-        "model": "systems.system",
+        "model": "easi_api.system",
         "pk": 2,
         "fields": {
             "name": "CMS System to do Amazing Things",
@@ -16,7 +16,7 @@
         }
     },
     {
-        "model": "systems.system",
+        "model": "easi_api.system",
         "pk": 3,
         "fields": {
             "name": "Test System 3",
@@ -24,7 +24,7 @@
         }
     },
     {
-        "model": "systems.system",
+        "model": "easi_api.system",
         "pk": 4,
         "fields": {
             "name": "Test System to Test Testy Things",
@@ -32,7 +32,7 @@
         }
     },
     {
-        "model": "systems.accessibilityrequest",
+        "model": "easi_api.accessibilityrequest",
         "pk": 1,
         "fields": {
             "name": "Easy Access to System Information 1.0",
@@ -40,7 +40,7 @@
         }
     },
     {
-        "model": "systems.accessibilityrequest",
+        "model": "easi_api.accessibilityrequest",
         "pk": 2,
         "fields": {
             "name": "Easy Access to System Information 1.1",
@@ -48,7 +48,7 @@
         }
     },
     {
-        "model": "systems.accessibilitytestdate",
+        "model": "easi_api.accessibilitytestdate",
         "pk": 1,
         "fields": {
             "date": "2021-02-01",
@@ -59,7 +59,7 @@
         }
     },
     {
-        "model": "systems.accessibilitytestdate",
+        "model": "easi_api.accessibilitytestdate",
         "pk": 2,
         "fields": {
             "date": "2021-02-20",

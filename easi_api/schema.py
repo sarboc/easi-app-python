@@ -1,7 +1,7 @@
 import graphene
 from graphene_django import DjangoObjectType
 
-from easi_api.systems.models import AccessibilityRequest, AccessibilityTestDate, System
+from easi_api.easi_api.models import AccessibilityRequest, AccessibilityTestDate, System
 
 class SystemType(DjangoObjectType):
     class Meta:
